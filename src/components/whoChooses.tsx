@@ -79,7 +79,7 @@ export function WhoChooses() {
                         className={`btn w-full mt-3 bg-primary ${
                             status === 'choosing' ? 'loading' : ''
                         }`}
-                        disabled={choosers.length === 0}
+                        disabled={choosers.length < 2}
                     >
                         {status === 'idle' ? 'Randomize!' : `Randomizing in ${timer}...`}
                     </button>
