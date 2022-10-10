@@ -35,11 +35,11 @@ export function WhoChooses() {
         <div className="flex justify-center items-center w-full mt-10 flex-col">
             <div className="card w-96 bg-base-100 shadow-xl border border-gray-300">
                 <div className="card-body">
-                    <div className="card-title mb-2">Who Chooses The Place?</div>
+                    <div className="card-title mb-2">Choose For Me</div>
                     <AddChooser />
 
                     {!!!choosers.length && (
-                        <p className="text-neutral text-sm">No one has been added yet</p>
+                        <p className="text-neutral text-sm">Nothing has been added yet</p>
                     )}
 
                     {!!choosers.length && (

@@ -22,7 +22,7 @@ export default function AddChooser() {
                     value={newChooser}
                     onChange={(e: any) => setNewChooser(e.target.value)}
                     type="text"
-                    placeholder="Enter name of chooser!"
+                    placeholder="Enter choice"
                     className="input w-full input-bordered"
                 />
                 <button className="btn btn-primary" onClick={handleAddChooser}>

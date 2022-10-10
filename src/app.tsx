@@ -9,9 +9,9 @@ export function App() {
 
     return (
         <div>
-            <div className="tabs tabs-boxed items-center justify-center gap-2">
+            {/* <div className="tabs tabs-boxed items-center justify-center gap-2">
                 <Tabs tab={tab} setTab={setTab} />
-            </div>
+            </div> */}
 
             {tab === 'choose' ? (
                 <WhoChooses />
