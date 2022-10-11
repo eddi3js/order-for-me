@@ -1,0 +1,23 @@
+---
+import AddOptionsForm from '@/components/AddOptionsForm';
+import OptionsList from '@/components/OptionsList';
+import Layout from '@/layouts/Layout.astro';
+import SelectWinner from '@/components/SelectWinner';
+import Winner from '@/components/Winner';
+---
+
+<Layout title="Welcome to Astro.">
+    <main>
+        <div class="flex justify-center items-center w-full mt-10 flex-col">
+            <div class="card w-96 bg-base-100 shadow-xl border border-gray-300">
+                <div class="card-body">
+                    <div class="card-title mb-2">Choose For Me</div>
+                    <AddOptionsForm client:load />
+                    <OptionsList client:load />
+                    <SelectWinner client:load />
+                </div>
+            </div>
+        </div>
+        <Winner client:load />
+    </main>
+</Layout>
